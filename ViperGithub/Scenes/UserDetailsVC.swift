@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  UserDetailsVC.swift
 //  ViperGithub
 //
 //  Created by Eslam on 7/14/20.
@@ -8,13 +8,12 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class UserDetailsVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+
         // Do any additional setup after loading the view.
     }
 
-
 }
-
