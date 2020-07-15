@@ -7,3 +7,9 @@
 //
 
 import Foundation
+
+class SearchInteractor: SearchInteractorInputProtocol {
+    var presenter: SearchInteractorOutputProtocol?
+    
+    
+}

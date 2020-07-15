@@ -6,4 +6,30 @@
 //  Copyright © 2020 ioslam.co. All rights reserved.
 //
 
-import Foundation
+import UIKit
+
+class SearchRouter: SearchRouterProtocol {
+    func navigateToUserDetailsView(with user: User) {
+        
+    }
+    
+   
+    weak var viewController: UIViewController?
+    
+    static func createModule() -> UIViewController {
+        
+        let router = SearchRouter()
+        let view = SearchVC()
+        let interactor = SearchInteractor()
+        
+        let presenter = SearchPresenter(view: view, interactor: interactor, router: router)
+        
+        view.presenter = presenter
+        interactor.presenter = presenter
+        router.viewController = view
+        
+        return view
+        
+    }
+   
+}
