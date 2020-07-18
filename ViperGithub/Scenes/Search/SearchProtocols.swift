@@ -9,24 +9,25 @@
 import Foundation
 
 protocol SearchViewProtocol: class {
-    var presenter: SearchPresenterProtocol? { get set }
-    func showIndicator()
-    func hideIndicator()
-    func reloadDate()
+    
+    var presenter: SearchPresenterProtocol! { get set }
+    
     func showError(errorMsg: String)
 
 }
 
-protocol SearchPresenterProtocol: class {
+protocol SearchPresenterProtocol {
     
     var view: SearchViewProtocol? { get set }
     
     func viewDidLoad()
+    
     func searchWith(_ username: String)
 }
 
-protocol SearchInteractorInputProtocol: class {
+protocol SearchInteractorInputProtocol {
     var presenter: SearchInteractorOutputProtocol? { get set }
+    func getUser(with username: String)
 }
 
 protocol SearchInteractorOutputProtocol {

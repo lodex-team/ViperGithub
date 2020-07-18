@@ -7,15 +7,13 @@
 //
 
 import Foundation
+
 class SearchPresenter: SearchPresenterProtocol, SearchInteractorOutputProtocol {
   
-    
-    
     var interactor: SearchInteractorInputProtocol
     weak var view: SearchViewProtocol?
     let router: SearchRouterProtocol
     var user: User?
-    var username: String!
     
     init(view: SearchViewProtocol, interactor: SearchInteractorInputProtocol, router: SearchRouterProtocol) {
         self.view = view
@@ -27,13 +25,21 @@ class SearchPresenter: SearchPresenterProtocol, SearchInteractorOutputProtocol {
     }
     
     func searchWith(_ username: String) {
-        self.username = username
-    }
+        Helper.showHideIndicator(isHidden: false, title: "Loading")
+        interactor.getUser(with: username)
+     }
     
     func getDataSuccessfully(user: User) {
+        Helper.showHideIndicator(isHidden: true, title: nil)
         self.user = user
+        DispatchQueue.main.async {
+            self.router.navigateToUserDetailsView(with: user)
+        }
     }
     func getDataWithError(errorMsg: GHError) {
-        view?.showError(errorMsg: errorMsg.rawValue)
+        Helper.showHideIndicator(isHidden: true, title: nil)
+        DispatchQueue.main.async {
+            self.view?.showError(errorMsg: errorMsg.rawValue)
+        }
       }
 }

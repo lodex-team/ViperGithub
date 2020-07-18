@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -28,6 +28,24 @@
 		AA431F9724BE372C00415153 /* SearchRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA431F9624BE372C00415153 /* SearchRouter.swift */; };
 		AA431F9924BE37B700415153 /* SearchPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA431F9824BE37B700415153 /* SearchPresenter.swift */; };
 		AA431F9B24BE37D500415153 /* SearchInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA431F9A24BE37D500415153 /* SearchInteractor.swift */; };
+		AA67D05124C0EA7B005EFD3D /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA67D05024C0EA7B005EFD3D /* MainTabBarController.swift */; };
+		AA67D05424C0ECFF005EFD3D /* BaseNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA67D05324C0ECFF005EFD3D /* BaseNavigationController.swift */; };
+		AA67D05B24C0F704005EFD3D /* SwiftSpinner in Frameworks */ = {isa = PBXBuildFile; productRef = AA67D05A24C0F704005EFD3D /* SwiftSpinner */; };
+		AA67D05D24C0F737005EFD3D /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA67D05C24C0F737005EFD3D /* Helper.swift */; };
+		AA67D06024C1192C005EFD3D /* FavoriteProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA67D05F24C1192C005EFD3D /* FavoriteProtocols.swift */; };
+		AA67D06324C11D70005EFD3D /* FavoritePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA67D06224C11D70005EFD3D /* FavoritePresenter.swift */; };
+		AA67D06524C1257A005EFD3D /* FavoriteRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA67D06424C1257A005EFD3D /* FavoriteRouter.swift */; };
+		AA67D06724C12668005EFD3D /* FavoriteInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA67D06624C12668005EFD3D /* FavoriteInteractor.swift */; };
+		AAAC979A24C2673900C04D51 /* FollowersListProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAAC979924C2673900C04D51 /* FollowersListProtocols.swift */; };
+		AAAC979C24C2676E00C04D51 /* FollowersListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAAC979B24C2676E00C04D51 /* FollowersListPresenter.swift */; };
+		AAAC979E24C2679700C04D51 /* FollowersListRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAAC979D24C2679700C04D51 /* FollowersListRouter.swift */; };
+		AAAC97A024C267AB00C04D51 /* FollowersListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAAC979F24C267AB00C04D51 /* FollowersListInteractor.swift */; };
+		AAAE684524BF8807003DFB3A /* UserDetailsProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAAE684424BF8807003DFB3A /* UserDetailsProtocols.swift */; };
+		AAAE684824BF8833003DFB3A /* UserDetailsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAAE684724BF8833003DFB3A /* UserDetailsPresenter.swift */; };
+		AAAE684A24BF889F003DFB3A /* UserDetailsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAAE684924BF889F003DFB3A /* UserDetailsRouter.swift */; };
+		AAAE684C24BF88BB003DFB3A /* UserDetailsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAAE684B24BF88BB003DFB3A /* UserDetailsInteractor.swift */; };
+		AAB0EC0C24C3896700D34795 /* FollowersCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAB0EC0B24C3896700D34795 /* FollowersCell.swift */; };
+		AAB0EC0E24C3AC9500D34795 /* GHAvatarImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAB0EC0D24C3AC9500D34795 /* GHAvatarImageView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,6 +72,23 @@
 		AA431F9624BE372C00415153 /* SearchRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchRouter.swift; sourceTree = "<group>"; };
 		AA431F9824BE37B700415153 /* SearchPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchPresenter.swift; sourceTree = "<group>"; };
 		AA431F9A24BE37D500415153 /* SearchInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchInteractor.swift; sourceTree = "<group>"; };
+		AA67D05024C0EA7B005EFD3D /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
+		AA67D05324C0ECFF005EFD3D /* BaseNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseNavigationController.swift; sourceTree = "<group>"; };
+		AA67D05C24C0F737005EFD3D /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
+		AA67D05F24C1192C005EFD3D /* FavoriteProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteProtocols.swift; sourceTree = "<group>"; };
+		AA67D06224C11D70005EFD3D /* FavoritePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritePresenter.swift; sourceTree = "<group>"; };
+		AA67D06424C1257A005EFD3D /* FavoriteRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteRouter.swift; sourceTree = "<group>"; };
+		AA67D06624C12668005EFD3D /* FavoriteInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteInteractor.swift; sourceTree = "<group>"; };
+		AAAC979924C2673900C04D51 /* FollowersListProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowersListProtocols.swift; sourceTree = "<group>"; };
+		AAAC979B24C2676E00C04D51 /* FollowersListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowersListPresenter.swift; sourceTree = "<group>"; };
+		AAAC979D24C2679700C04D51 /* FollowersListRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowersListRouter.swift; sourceTree = "<group>"; };
+		AAAC979F24C267AB00C04D51 /* FollowersListInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowersListInteractor.swift; sourceTree = "<group>"; };
+		AAAE684424BF8807003DFB3A /* UserDetailsProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailsProtocols.swift; sourceTree = "<group>"; };
+		AAAE684724BF8833003DFB3A /* UserDetailsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailsPresenter.swift; sourceTree = "<group>"; };
+		AAAE684924BF889F003DFB3A /* UserDetailsRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailsRouter.swift; sourceTree = "<group>"; };
+		AAAE684B24BF88BB003DFB3A /* UserDetailsInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailsInteractor.swift; sourceTree = "<group>"; };
+		AAB0EC0B24C3896700D34795 /* FollowersCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowersCell.swift; sourceTree = "<group>"; };
+		AAB0EC0D24C3AC9500D34795 /* GHAvatarImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GHAvatarImageView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +96,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AA67D05B24C0F704005EFD3D /* SwiftSpinner in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -90,6 +126,8 @@
 				AA431F7224BE26F900415153 /* Managers */,
 				AA431F6D24BE26A100415153 /* Model */,
 				AA431F6E24BE26A800415153 /* Scenes */,
+				AA67D05E24C118B5005EFD3D /* Favorite */,
+				AAAC979824C266CE00C04D51 /* FollowerList */,
 				AA431F7324BE270000415153 /* Views */,
 				AA431F6F24BE26B000415153 /* Extentions */,
 				AA431F7124BE26F000415153 /* Utalities */,
@@ -101,8 +139,8 @@
 		AA431F6D24BE26A100415153 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				AA431F8924BE283E00415153 /* Follower.swift */,
 				AA431F8A24BE283E00415153 /* User.swift */,
+				AA431F8924BE283E00415153 /* Follower.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -110,10 +148,9 @@
 		AA431F6E24BE26A800415153 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				AA67D05224C0ECDD005EFD3D /* Base */,
 				AA431F9324BE36DE00415153 /* Search */,
-				AA431F7724BE276300415153 /* UserDetailsVC.swift */,
-				AA431F7A24BE279600415153 /* FavoriteVC.swift */,
-				AA431F9124BE35F800415153 /* FollowerListVC.swift */,
+				AAAE684124BF86B1003DFB3A /* UserDetails */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
@@ -140,6 +177,7 @@
 			isa = PBXGroup;
 			children = (
 				AA431F8F24BE285F00415153 /* ErrorMessage.swift */,
+				AA67D05C24C0F737005EFD3D /* Helper.swift */,
 			);
 			path = Utalities;
 			sourceTree = "<group>";
@@ -155,11 +193,13 @@
 		AA431F7324BE270000415153 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				AAB0EC0A24C3894400D34795 /* cells */,
 				AA431F7E24BE280C00415153 /* AlertView.swift */,
 				AA431F7F24BE280C00415153 /* GHBodyLabel.swift */,
 				AA431F8124BE280C00415153 /* GHButton.swift */,
 				AA431F8024BE280C00415153 /* GHTextField.swift */,
 				AA431F7D24BE280C00415153 /* GHTitleLabel.swift */,
+				AAB0EC0D24C3AC9500D34795 /* GHAvatarImageView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -176,12 +216,65 @@
 			isa = PBXGroup;
 			children = (
 				AA431F7424BE273800415153 /* SearchVC.swift */,
-				AA431F9424BE370A00415153 /* SearchProtocols.swift */,
-				AA431F9624BE372C00415153 /* SearchRouter.swift */,
 				AA431F9824BE37B700415153 /* SearchPresenter.swift */,
 				AA431F9A24BE37D500415153 /* SearchInteractor.swift */,
+				AA431F9624BE372C00415153 /* SearchRouter.swift */,
+				AA431F9424BE370A00415153 /* SearchProtocols.swift */,
 			);
 			path = Search;
+			sourceTree = "<group>";
+		};
+		AA67D05224C0ECDD005EFD3D /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				AA67D05024C0EA7B005EFD3D /* MainTabBarController.swift */,
+				AA67D05324C0ECFF005EFD3D /* BaseNavigationController.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		AA67D05E24C118B5005EFD3D /* Favorite */ = {
+			isa = PBXGroup;
+			children = (
+				AA431F7A24BE279600415153 /* FavoriteVC.swift */,
+				AA67D06224C11D70005EFD3D /* FavoritePresenter.swift */,
+				AA67D06624C12668005EFD3D /* FavoriteInteractor.swift */,
+				AA67D06424C1257A005EFD3D /* FavoriteRouter.swift */,
+				AA67D05F24C1192C005EFD3D /* FavoriteProtocols.swift */,
+			);
+			path = Favorite;
+			sourceTree = "<group>";
+		};
+		AAAC979824C266CE00C04D51 /* FollowerList */ = {
+			isa = PBXGroup;
+			children = (
+				AA431F9124BE35F800415153 /* FollowerListVC.swift */,
+				AAAC979B24C2676E00C04D51 /* FollowersListPresenter.swift */,
+				AAAC979F24C267AB00C04D51 /* FollowersListInteractor.swift */,
+				AAAC979D24C2679700C04D51 /* FollowersListRouter.swift */,
+				AAAC979924C2673900C04D51 /* FollowersListProtocols.swift */,
+			);
+			path = FollowerList;
+			sourceTree = "<group>";
+		};
+		AAAE684124BF86B1003DFB3A /* UserDetails */ = {
+			isa = PBXGroup;
+			children = (
+				AA431F7724BE276300415153 /* UserDetailsVC.swift */,
+				AAAE684724BF8833003DFB3A /* UserDetailsPresenter.swift */,
+				AAAE684B24BF88BB003DFB3A /* UserDetailsInteractor.swift */,
+				AAAE684924BF889F003DFB3A /* UserDetailsRouter.swift */,
+				AAAE684424BF8807003DFB3A /* UserDetailsProtocols.swift */,
+			);
+			path = UserDetails;
+			sourceTree = "<group>";
+		};
+		AAB0EC0A24C3894400D34795 /* cells */ = {
+			isa = PBXGroup;
+			children = (
+				AAB0EC0B24C3896700D34795 /* FollowersCell.swift */,
+			);
+			path = cells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -200,6 +293,9 @@
 			dependencies = (
 			);
 			name = ViperGithub;
+			packageProductDependencies = (
+				AA67D05A24C0F704005EFD3D /* SwiftSpinner */,
+			);
 			productName = ViperGithub;
 			productReference = AA431F5624BE230D00415153 /* ViperGithub.app */;
 			productType = "com.apple.product-type.application";
@@ -228,6 +324,9 @@
 				Base,
 			);
 			mainGroup = AA431F4D24BE230D00415153;
+			packageReferences = (
+				AA67D05924C0F704005EFD3D /* XCRemoteSwiftPackageReference "SwiftSpinner" */,
+			);
 			productRefGroup = AA431F5724BE230D00415153 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -256,23 +355,40 @@
 			files = (
 				AA431F7824BE276300415153 /* UserDetailsVC.swift in Sources */,
 				AA431F8424BE280C00415153 /* GHBodyLabel.swift in Sources */,
+				AA67D05124C0EA7B005EFD3D /* MainTabBarController.swift in Sources */,
 				AA431F9B24BE37D500415153 /* SearchInteractor.swift in Sources */,
 				AA431F9924BE37B700415153 /* SearchPresenter.swift in Sources */,
 				AA431F8824BE283200415153 /* NetworkManager.swift in Sources */,
 				AA431F7524BE273800415153 /* SearchVC.swift in Sources */,
+				AAAE684C24BF88BB003DFB3A /* UserDetailsInteractor.swift in Sources */,
+				AAAC979C24C2676E00C04D51 /* FollowersListPresenter.swift in Sources */,
 				AA431F8624BE280C00415153 /* GHButton.swift in Sources */,
+				AAB0EC0E24C3AC9500D34795 /* GHAvatarImageView.swift in Sources */,
 				AA431F5A24BE230D00415153 /* AppDelegate.swift in Sources */,
 				AA431F8524BE280C00415153 /* GHTextField.swift in Sources */,
 				AA431F9724BE372C00415153 /* SearchRouter.swift in Sources */,
+				AAAE684824BF8833003DFB3A /* UserDetailsPresenter.swift in Sources */,
 				AA431F8224BE280C00415153 /* GHTitleLabel.swift in Sources */,
+				AAAC979A24C2673900C04D51 /* FollowersListProtocols.swift in Sources */,
 				AA431F9024BE285F00415153 /* ErrorMessage.swift in Sources */,
 				AA431F8C24BE283E00415153 /* User.swift in Sources */,
+				AA67D06324C11D70005EFD3D /* FavoritePresenter.swift in Sources */,
 				AA431F8B24BE283E00415153 /* Follower.swift in Sources */,
 				AA431F7B24BE279600415153 /* FavoriteVC.swift in Sources */,
+				AAAE684A24BF889F003DFB3A /* UserDetailsRouter.swift in Sources */,
 				AA431F9224BE35F800415153 /* FollowerListVC.swift in Sources */,
 				AA431F8E24BE285100415153 /* UIView + Ex.swift in Sources */,
 				AA431F9524BE370A00415153 /* SearchProtocols.swift in Sources */,
 				AA431F8324BE280C00415153 /* AlertView.swift in Sources */,
+				AAB0EC0C24C3896700D34795 /* FollowersCell.swift in Sources */,
+				AA67D06524C1257A005EFD3D /* FavoriteRouter.swift in Sources */,
+				AAAC979E24C2679700C04D51 /* FollowersListRouter.swift in Sources */,
+				AA67D06024C1192C005EFD3D /* FavoriteProtocols.swift in Sources */,
+				AA67D06724C12668005EFD3D /* FavoriteInteractor.swift in Sources */,
+				AAAC97A024C267AB00C04D51 /* FollowersListInteractor.swift in Sources */,
+				AA67D05D24C0F737005EFD3D /* Helper.swift in Sources */,
+				AA67D05424C0ECFF005EFD3D /* BaseNavigationController.swift in Sources */,
+				AAAE684524BF8807003DFB3A /* UserDetailsProtocols.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -462,6 +578,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		AA67D05924C0F704005EFD3D /* XCRemoteSwiftPackageReference "SwiftSpinner" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/icanzilb/SwiftSpinner";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.1.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		AA67D05A24C0F704005EFD3D /* SwiftSpinner */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AA67D05924C0F704005EFD3D /* XCRemoteSwiftPackageReference "SwiftSpinner" */;
+			productName = SwiftSpinner;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = AA431F4E24BE230D00415153 /* Project object */;
 }

@@ -9,10 +9,6 @@
 import UIKit
 
 class SearchRouter: SearchRouterProtocol {
-    func navigateToUserDetailsView(with user: User) {
-        
-    }
-    
    
     weak var viewController: UIViewController?
     
@@ -29,7 +25,10 @@ class SearchRouter: SearchRouterProtocol {
         router.viewController = view
         
         return view
-        
     }
+    func navigateToUserDetailsView(with user: User) {
+        let userDetailsView = UserDetailsRouter.createModule(with: user)
+        viewController?.navigationController?.pushViewController(userDetailsView, animated: true)
+       }
    
 }

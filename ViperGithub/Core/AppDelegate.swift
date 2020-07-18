@@ -21,11 +21,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
         return true
     }
-    func createTabBar() -> UITabBarController {
-        let tabBarVC = UITabBarController()
+    func createTabBar() -> MainTabBarController {
+        let tabBarVC = MainTabBarController()
         UITabBar.appearance().tintColor = .systemGreen
-        tabBarVC.viewControllers = [createSearchNC(),createFavoriteNC()]
-
         return tabBarVC
     }
 
@@ -43,8 +41,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     return UINavigationController(rootViewController: favoriteVC)
     }
     
-    func configureNavigationBar() {
-        UINavigationBar.appearance().tintColor = .systemGreen
-    }
+//    func configureNavigationBar() {
+//        UINavigationBar.appearance().tintColor = .systemGreen
+//    }
 }
 

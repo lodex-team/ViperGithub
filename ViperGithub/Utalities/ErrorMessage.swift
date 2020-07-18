@@ -9,9 +9,10 @@
 import Foundation
 
 enum GHError: String, Error {
-    case invalidURL       = "error, check url"
-    case invalidUsername  = "error, check your username"
-    case unableToComplete = "error, check your internet"
-    case invalidResponse  = "error, invalid response, please try again!"
-    case invalidData      = "error, invalid data received from the server server"
+    case invalidURL       = "Oops, CHECK URL🤨"
+    case invalidUsername  = "Oops, CHECK YOUR THE USERNAME ❌"
+    case unableToComplete = "Oops, CHECK YOUR INTERNET CONNECTION! ‼️"
+    case invalidResponse  = "Oops, INVALID RESPONSE, PLEASE TRY AGAIN! ✖️"
+    case invalidData      = "Oops, INVALID DATA RECEIVED FROM THE SERVER!⚠️ "
+    case emptyUsername    = "PLEASE ENTER A USERNAME, WE NEED TO KNOW WHO TO LOOK FOR!⁉️."
 }

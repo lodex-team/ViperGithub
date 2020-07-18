@@ -1,5 +1,5 @@
 //
-//  SearchVC.swift
+//  FavoriteVC.swift
 //  ViperGithub
 //
 //  Created by Eslam on 7/14/20.
@@ -8,17 +8,23 @@
 
 import UIKit
 
-class SearchVC: UIViewController, SearchViewProtocol {
+class FavoriteVC: UIViewController, FavoriteViewProtocol {
     
-    var presenter: SearchPresenterProtocol!
+    var presenter: FavoritePresenterProtocol!
     let actionButton = GHButton(backgroundColor: .systemBlue, title: "")
     let dismissButton = UIButton()
     let gh_iv = UIImageView()
     let search_textfield = GHTextField()
-    let search_button = GHButton(backgroundColor: .systemGreen, title: "Get User")
+    let search_button = GHButton(backgroundColor: .systemGreen, title: "Get Followers")
+    
     var userNotEmpty: Bool {
-        let textField = search_textfield.text!.trimmingCharacters(in: .whitespaces)
-        return !textField.isEmpty }
+    let textField = search_textfield.text!.trimmingCharacters(in: .whitespaces)
+    return !textField.isEmpty }
+    
+    
+    func showHideSpinner(isHidden: Bool, title: String?) {
+        
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -42,7 +48,7 @@ class SearchVC: UIViewController, SearchViewProtocol {
     }
 }
 //MARK: - UI
-extension SearchVC {
+extension FavoriteVC {
     
     //MARK: - create `Github` Image layout
     fileprivate func createGHImage() {
@@ -55,7 +61,6 @@ extension SearchVC {
             gh_iv.heightAnchor.constraint(equalToConstant: 200),
             gh_iv.widthAnchor.constraint(equalToConstant: 200)
         ])
-        
     }
     //MARK: - create `search` text field layout
     fileprivate func createSearchTextfield() {
@@ -72,6 +77,7 @@ extension SearchVC {
     //MARK: - create `Search` Button layout
     fileprivate func createSearchButton() {
         search_button.addTarget(nil, action: #selector(validateTextfield), for: .touchUpInside)
+        search_button.backgroundColor = .systemBlue
         view.addSubview(search_button)
         NSLayoutConstraint.activate([
             search_button.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -80),
@@ -115,7 +121,7 @@ extension SearchVC {
 }
 
 //MARK: - UITextfield Delegates
-extension SearchVC: UITextFieldDelegate {
+extension FavoriteVC: UITextFieldDelegate {
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         textField.resignFirstResponder()
@@ -132,13 +138,18 @@ extension SearchVC: UITextFieldDelegate {
         }
         displayUserDetails()
     }
+    
     //MARK: - go to user details vc to display
     func displayUserDetails() {
-        presenter!.searchWith(search_textfield.text!)
+        presenter.searchFollowers(by: search_textfield.text!)
         search_textfield.text = ""
+    }
+    //MARK: - what happens when something wrong when user get bad request
+    func showErrorAlert(with errorMessage: GHError) {
+        self.view.setAlertView(title: "OPPS", message: errorMessage.rawValue, buttonTitle: "OK", actionButton: actionButton, dismissButton: dismissButton)
     }
     
     @objc func tabToDismiss() {
-        print("rx0")
+        print("tabToDismiss")
     }
 }
